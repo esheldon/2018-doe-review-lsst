@@ -1,4 +1,6 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
+
+
 
 \newcommand{\backupbegin}{
    \newcounter{finalframe}
@@ -13,21 +15,17 @@
 \usepackage{pgffor}
 
 \setbeamertemplate{navigation symbols}{}
-
-
 \setbeamercolor{frametitle}{fg=red}
-\setbeamercolor{title}{fg=red}
-
+\setbeamercolor{title}{fg=white}
+\setbeamercolor{author}{fg=white}
+\setbeamercolor{date}{fg=white}
 \setbeamerfont{frametitle}{family=\rmfamily,shape=\itshape,size=\huge} 
 \setbeamerfont{title}{family=\rmfamily,shape=\itshape,size=\huge} 
-
 \usetheme{boxes}
-%\setbeamertemplate{background canvas}[vertical shading][bottom=white,top=blue!20]
-
 \setbeamertemplate{footline}[frame number]
-
 \setbeamertemplate{itemize/enumerate body begin}{\small}
 \setbeamertemplate{itemize/enumerate subbody begin}{\footnotesize}
+
 
 \newcommand{\lyaf}{Lyman-$\alpha$ forest\ }
 \newcommand{\lya}{Lyman-$\alpha$\ }
@@ -39,17 +37,40 @@
 \newcommand{\brown}[1]{{\color{brown}#1}}
 \newcommand{\blue}[1]{{\color{blue}#1}}
 
+%
+%Global Background must be put in preamble
+%-rescale the 16:9 image to slide size choice
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{bnl_interior}}
+%
+\title{Preparation for Physics with LSST}
+\author{Erin Sheldon}
+\date{July 25, 2018}
 
 \begin{document}
+{\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{bnl_title}}
+\maketitle
+}
+
 
 
 \begin{frame}
   \frametitle{Overview of LSST  at BNL}
 
   \begin{center}
-    \includegraphics[width=\linewidth]{./chart.png}
+    \includegraphics[height=0.8\textheight]{chart.pdf}
   \end{center}
 \end{frame}
+
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{GenericLSSTslides20180704-pages-2.pdf}}
+        }
+\frame
+{
+}
+}
+
 
 
 \begin{frame}
@@ -72,6 +93,26 @@
 
 \end{frame}
 
+
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{GenericLSSTslides20180704-pages-3.pdf}}
+        }
+\frame
+{
+}
+}
+
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{GenericLSSTslides20180704-pages-4.pdf}}
+        }
+\frame
+{
+}
+}
 
 
 
@@ -190,7 +231,7 @@
   \frametitle{LSST DESC Collaboration Meeting 2017 }
   
   \begin{columns}
-    \begin{column}{5cm}
+    \begin{column}{0.4\textwidth}
       \begin{itemize}
       \item Collaboration meetings hosted at SLAC in the winter and
         participating institutions in the summer
@@ -201,13 +242,23 @@
 
       \end{itemize}
     \end{column}
-    \begin{column}{6cm}
+    \begin{column}{0.6\textwidth}
       \includegraphics[width=\linewidth]{./D0680717.jpg}
     \end{column}
   \end{columns}
 
 
 \end{frame}
+
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{GenericLSSTslides20180704-pages-5.pdf}}
+        }
+\frame
+{
+}
+}
 
 
 
@@ -407,7 +458,7 @@
                     pipelines to measure weak lensing shear.
 
                 \item Responsible for producing, or coordinating
-                    the production, of the shear catalogs.
+                    the production of, the shear catalogs.
 
                 \item Adapting codes from the Dark
                     Energy Survey (metacalibration, MEDS,
@@ -449,13 +500,11 @@
             produce the inputs needed for the shear
             pipelines.
 
-        \item The shear code has been run on the inputs, 
-            and catalogs produced, for a subset of the 
-            HSC data.  This is all the data that
-            was available at the time.
+        \item The shear code has been run on part of the HSC data, and shear
+            catalogs produced.  Only a small subset of the data was available
+            at the time.
 
-        \item The code is ready to run on the full HSC
-            and DC2 when available.
+        \item The code is ready to run on the full HSC and DC2 when available.
 
     \end{itemize}
 }
@@ -492,7 +541,8 @@
 
     \begin{itemize}
 
-        \item Get other DES codes working as well: MOF Image Deblender
+        \item Get other DES codes working as well: MOF Image Deblender. It already
+            runs but probably may need to be tuned to the higher object density.
 
         \item Help to prepare other codes, e.g. BFD (Bernstein et al.)
 
@@ -513,7 +563,7 @@
 
             \begin{itemize}
 
-                \item Working an improved deblender based on original
+                \item Working on an improved deblender based on original
                     MOF from DES.  Basically ``MOF done right''.
 
                 \item With a SULI student Lorena Mezini, testing new MOF
@@ -522,8 +572,9 @@
 
                 \item Just finished a project showing we can use coadds
                     for shear... if done correctly!  So-called ``postage-stamp
-                    coadds''.  Need to write it up and implement something
-                    like it within the DM Stack.
+                    coadds''.  Saves LSST a factor of 100 in computing
+                    time. TODO: Write it up and make an implementation
+                    available to LSST DM.
 
             \end{itemize}
         \end{column}
@@ -579,6 +630,39 @@
 
 }
 
+
+\frame
+{
+
+    \frametitle{Summary}
+
+    %\setbeamerfont*{itemize/enumerate body}{size=\large}
+
+    \begin{columns}
+        \begin{column}{0.4\textwidth}
+            \begin{itemize}
+
+                \item BNL plays a key role delivering the LSST science rafts
+
+                \item BNL has key leadership and technical roles in the LSST
+                    DESC
+
+                \item DESC roles will expand as current precursor projects
+                    wind down (e.g. DES)
+
+            \end{itemize}
+
+        \end{column}
+        \begin{column}{0.6\textwidth}
+            \centering
+                \includegraphics[width=\linewidth]{20180207_101422_scaled.jpg}
+                \newline
+                {\tiny LSST Project/NSF/AURA}
+        \end{column}
+
+    \end{columns}
+
+}
 
 
 
