@@ -157,7 +157,7 @@
 
       \item \textbf{Erin Sheldon}:
           \begin{itemize}
-              \item WL pipeline Scientists (technical lead)
+              \item WL pipeline Scientist (technical lead)
               %\item partly supported on DESC  operations funding
               \item WL shear group convenor in DES (LSST precursor)
           \end{itemize}
@@ -182,6 +182,16 @@
 \end{itemize}
 
 \end{frame}
+
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{DESCPipelineScientists.pdf}}
+        }
+\frame
+{
+}
+}
 
 
 
@@ -494,7 +504,7 @@
 \frame
 {
 
-    \frametitle{Weak Lensing Pipeline Scientist: Progress}
+    \frametitle{Weak Lensing Pipeline Scientist: Current Progress}
 
     %\setbeamerfont*{itemize/enumerate body}{size=\large}
 
@@ -540,14 +550,15 @@
 \frame
 {
 
-    \frametitle{Weak Lensing Pipeline Scientist: Further Future}
+    \frametitle{Weak Lensing Pipeline Scientist: Future}
 
     %\setbeamerfont*{itemize/enumerate body}{size=\large}
 
     \begin{itemize}
 
-        \item Get other DES codes working as well: MOF Image Deblender. It already
-            runs but probably may need to be tuned to the higher object density.
+        \item Get other DES codes working as well: MOF Image Deblender. 
+            Currently tuning for higher LSST density using deep fields
+            from DES.
 
         \item Help to prepare other codes, e.g. BFD (Bernstein et al.)
 
@@ -575,7 +586,7 @@
                     (see plot) and the Scarlet deblender (Melchior, Moolencamp)
                     for shear measurement.
 
-                \item Just finished a project showing we can use coadds
+                \item Just finished a project with B. Armstrong showing we can use coadds
                     for shear... if done correctly!  So-called ``postage-stamp
                     coadds''.  Saves LSST a factor of 100 in computing
                     time. TODO: Write it up and make an implementation
