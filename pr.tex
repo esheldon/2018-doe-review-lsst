@@ -78,33 +78,35 @@
   \frametitle{LSST project at BNL}
 
   \begin{columns}
-    \begin{column}{10cm}
-  In Instrumentation Division, focus on \emph{raft production}:
-  \begin{itemize}
+      \begin{column}{10cm}
+          In Instrumentation Division, focus on \emph{raft production}:
+          \begin{itemize}
 
-  \item BNL deliverable: tower raft modules containing focal plane
-    sensors and driver / readout electronics
+              \item BNL deliverable: tower raft modules containing focal plane
+                  sensors and driver / readout electronics
 
-  \item BNL deliverable is performance and schedule critical
+              \item BNL deliverable is performance and schedule critical
 
-  \item Production in full swing but ramping down 
+              \item Production in full swing but ramping down 
 
-  \item There is approximately \$1.5 mil of LSST project funding to  flow
-    through IO by $\sim$ 3/19 (down from peak $\sim$\$5mil)
+              \item There is approximately \$1.5 mil of LSST project funding to  flow
+                  through IO by $\sim$ 3/19 (down from peak $\sim$\$5mil)
 
-  \item LSST (Science Raft) has approximately 8 full time employees and the
-  equivalent of about 2 FTEs of contract labor support 
-  
-  \item Science Raft Subsystem Manager and Subsystem Scientist are BNL
-  employees at IO
+              \item LSST (Science Raft) has approximately 8 full time employees and the
+                  equivalent of about 2 FTEs of contract labor support 
 
- \end{itemize}
-    \end{column}
-    \begin{column}{5cm}
-      \includegraphics[width=\linewidth]{./lsstraftx.png}
-    \end{column}
+              \item Science Raft Subsystem Manager and Subsystem Scientist are BNL
+                  employees at IO
+
+              \item See full talks by Nomerotski and O'Connor
+
+          \end{itemize}
+      \end{column}
+      \begin{column}{5cm}
+          \includegraphics[width=\linewidth]{./lsstraftx.png}
+      \end{column}
   \end{columns}
-  
+
 
 \end{frame}
 
@@ -148,18 +150,6 @@
     \end{itemize}
 
 \end{frame}
-
-% including full pdf page
-{
-    \usebackgroundtemplate{%
-        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{DESCPipelineScientists.pdf}}
-        }
-\frame
-{
-}
-}
-
-
 
 \begin{frame}
   \frametitle{University connections re LSST}
@@ -219,7 +209,7 @@
         with Stony Brook.
       \item The choice of BNL as host is a recognition of the important role
           BNL plays in the collaboration
-      \item Meeting was deemed a great success
+      \item Meeting was deemed a great success {\color{red} (by whom?)}
 
       \end{itemize}
     \end{column}
@@ -246,42 +236,40 @@
 \begin{frame}
 \frametitle {DESC Large Scale Structure WG}
 
-\begin{itemize}  
-\item co-chaired by \textbf{Slosar} since January 2016 with David
-  Alonso (Oxford)
+    \begin{itemize}  
+        \item co-chaired by \textbf{Slosar} since January 2016 with David
+            Alonso (Oxford)
 
-\item Actively developing the 3x2pt pipeline infrastructure and
-  novel analysis tools with others in the LSS group:
-  \begin{itemize}
-  \item Slosar developed the \texttt{sacc} container class that will
-    hold correlations, covariance matrices, etc. for the official
-    pipeline
+        \item Actively developing the 3x2pt pipeline infrastructure and
+            novel analysis tools with others in the LSS group:
+            \begin{itemize}
+                \item Slosar developed the \texttt{sacc} container class that will
+                    hold correlations, covariance matrices, etc. for the official
+                    pipeline
 
-  \item Slosar helped in development of \texttt{NaMaster}, the power
-    spectrum estimation tool with capability for full mode projects,
-    etc (main developer David Alonso, paper to be ready soon)
-  \end{itemize}
+                \item Slosar contributed to \texttt{NaMaster}, the power
+                    spectrum estimation tool with capability for full mode projects,
+                    etc (main developer David Alonso, paper to be ready soon)
+            \end{itemize}
 
-\item In addition to infrastructure: four active research projects:
+        \item In addition to infrastructure: four active research projects:
 
-  \begin{itemize}
-  \item 2pt-loop: full quick analysis loop for testing
-  \item HSC data re-analysis
-  \item understanding blending and DM through DC2 input-output catalog
-    matching
+            \begin{itemize}
+                \item 2pt-loop: full quick analysis loop for testing effect of 
+                    systematics on recovered cosmological parameters
+                \item HSC data re-analysis
+                \item understanding blending and DM through DC2 input-output catalog
+                    matching
 
-  \item In conjuction with TJP, we have begun working on project to
-  understand modeling beyond linear bias for LSST (co-leading with
-  Jonathan Blazek)
+                \item In conjuction with TJP, we have begun working on project to
+                    understand modeling beyond linear bias for LSST (co-leading with
+                    Jonathan Blazek)
 
-  \end{itemize}
-
-
-
+            \end{itemize}
 
 
+    \end{itemize}
 
-\end{itemize}
 \end{frame}
 
 
@@ -475,6 +463,19 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
 
 }
 
+% including full pdf page
+{
+    \usebackgroundtemplate{%
+        \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[height=\paperheight]{DESCPipelineScientists.pdf}}
+        }
+\frame
+{
+}
+}
+
+
+
+
 \frame
 {
 
@@ -571,8 +572,6 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
         \begin{column}{0.5\textwidth}
             \begin{center}
                 \includegraphics[width=\textwidth]{bias-v-rad-MOF-multiband.png}
-                \newline
-                {\tiny Tom McClintock}
             \end{center}
         \end{column}
 
@@ -635,10 +634,11 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
                 \item BNL plays a key role delivering the LSST science rafts
 
                 \item BNL has key leadership and technical roles in the LSST
-                    DESC
-
-                \item DESC roles will expand as current precursor projects
+                    DESC which will expand as current precursor projects
                     wind down (e.g. DES)
+
+                \item BNL is well positioned to have high scientific impact
+                    in the LSST era.
 
             \end{itemize}
 
