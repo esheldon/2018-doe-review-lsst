@@ -162,7 +162,7 @@
             \begin{itemize}
                 \item Joining BNL as a postdoc in the fall
                 \item Leading cosmology with galaxy
-                    clusters using DC2
+                    clusters using Data Challenge 2 (DC2)
             \end{itemize}
 
         \item \textbf{Andrei Nomerotski}:
@@ -194,7 +194,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{University connections re LSST}
+  \frametitle{LSST University Connections}
 
   \begin{itemize}
 
@@ -203,8 +203,7 @@
         \begin{itemize}
             \item HyeYun Park is a graduate student working in cleanroom and
                 DC2 analysis
-            \item Anja von der Linden is DESC cluster WG convenor.
-            \item Anja and student Lucy Baumont working with Sheldon on cluster lensing project
+            \item Anja von der Linden (DESC cluster WG convenor) and student Lucy Baumont working with Sheldon on cluster lensing project
             \item Joint BNL/Stony Brook seminar
         \end{itemize}
 
@@ -251,7 +250,6 @@
         with Stony Brook.
       \item The choice of BNL as host is a recognition of the important role
           BNL plays in the collaboration
-      \item Meeting was deemed a great success {\color{red} (by whom?)}
 
       \end{itemize}
     \end{column}
@@ -297,11 +295,13 @@
         \item In addition to infrastructure: four active research projects:
 
             \begin{itemize}
-                \item 2pt-loop: full quick analysis loop for testing effect of 
+                \item 2pt validation: full quick analysis loop for testing effect of 
                     systematics on recovered cosmological parameters
+
                 \item HSC data re-analysis
-                \item understanding blending and DM through DC2 input-output catalog
-                    matching
+
+                \item Understanding data reduction and blending through DC2
+                    input-output catalog matching
 
                 \item In conjuction with TJP, we have begun working on project to
                     understand modeling beyond linear bias for LSST (co-leading with
@@ -325,7 +325,7 @@
       \item Lognormal mocks provide a quick short-cut to ``realistic
         enough'' galaxy fields
       \item These fields can be mocked using the full complexity, to
-        create toy problems to study systematic effects one by one:
+        lend more control and study systematic effects one by one:
         \begin{itemize}
 \scriptsize
         \item photo-z errors
@@ -445,7 +445,6 @@
       \begin{center}
 \scriptsize
 Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
-        \textit{(PRELIMINARY)}
       \end{center}
       \end{column}
 
@@ -525,20 +524,28 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
 
     %\setbeamerfont*{itemize/enumerate body}{size=\large}
 
-    \begin{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
 
-        \item Sheldon has produced the framework to
-            use the LSST data interface (the Butler) to
-            produce the inputs needed for the shear
-            pipelines.
+                \item Sheldon has produced the framework to
+                    use the LSST data interface (the Butler) to
+                    produce the inputs needed for the shear
+                    pipelines.
 
-        \item The shear code has been run on part of the HSC data, and shear
-            catalogs produced.  Only a small subset of the data was available
-            at the time.
+                \item The shear code has been run on part of the HSC data, and shear
+                    catalogs produced.  Only a small subset of the data was available
+                    at the time.
 
-        \item The code is ready to run on the full HSC and DC2 when available.
+                \item The code is ready to run on the full HSC and DC2 when available.
 
-    \end{itemize}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{LSSTWorkflow.pdf}
+        \end{column}
+    \end{columns}
 }
 
 \frame
@@ -548,20 +555,32 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
 
     %\setbeamerfont*{itemize/enumerate body}{size=\large}
 
-    \begin{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
 
-        \item Working with Francois Lanusse (CMU) to get the processing
-            of DC2 working at NERSC. Francois plans to take on the
-            actual production.
+                \item Working with Francois Lanusse (CMU) to get the processing
+                    of DC2 working at NERSC. Francois plans to take on the
+                    actual production.
 
-        \item Help the working group to test and use the outputs.
+                \item Analyze the outputs
 
-        \item A new HSC reprocessing should be available soon, and
-            shear catalogs will be produced.  This could 
-            potentially lead to science papers.
+                \item Show the working group how to test and use the outputs.
 
+                \item A new HSC reprocessing should be available soon, and
+                    shear catalogs will be produced.  This could 
+                    potentially lead to science papers.
 
-    \end{itemize}
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{LSSTAnalysisWorkflow.pdf}
+        \end{column}
+    \end{columns}
+
 }
 
 \frame
@@ -571,18 +590,43 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
 
     %\setbeamerfont*{itemize/enumerate body}{size=\large}
 
-    \begin{itemize}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
 
-        \item Get other DES codes working as well: MOF Image Deblender.  LSST
-            has higher object density than DES.  Currently testing this regime
-            using deep fields from DES.
+            \begin{itemize}
 
-        \item Help to prepare other codes, e.g. BFD (Bernstein et al.)
+                \item Get other DES codes working as well: MOF Image Deblender.  LSST
+                    has higher object density than DES.  Currently testing this regime
+                    using deep fields from DES.
 
-        \item Get some of the interface code worked into LSST DM
+                \item Help to prepare other codes, e.g. BFD (Bernstein et al.)
 
-    \end{itemize}
+                \item Get some of the interface code worked into LSST DM
+
+            \end{itemize}
+
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+            \centering
+            \includegraphics[angle=90,height=0.8\textheight]{HSC-DES-interacting-pair.jpg}
+        \end{column}
+    \end{columns}
+
+
 }
+
+{
+    \usebackgroundtemplate{%
+        \colorbox{black}{ \parbox[c][\paperheight][c]{\paperwidth}{\centering\includegraphics[width=0.9\paperwidth]{HSC-DES-interacting-pair.jpg}} }
+        %\colorbox{black}{ \vbox to \paperheight{\vfil\hbox to \paperwidth{\hfil\includegraphics[height=\paperheight]{DES0022-4831-four.jpg}\hfil}\vfil} }
+    }
+\frame
+{
+}
+}
+
+
 
 \frame
 {
@@ -597,7 +641,7 @@ Efficacy of HSC sample-cleaning flags on DC2 data. \textit{(PRELIMINARY)}
             \begin{itemize}
 
                 \item Working on an improved deblender based on original
-                    MOF from DES.  Basically ``MOF done right''.
+                    MOF from DES.
 
                 \item With a SULI student Lorena Mezini, testing new MOF
                     (see plot) and the Scarlet deblender (Melchior, Moolencamp)
